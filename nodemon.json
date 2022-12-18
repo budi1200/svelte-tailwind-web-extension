@@ -1,0 +1,6 @@
+{
+    "watch": ["src/*"],
+    "ext": "svelte,ts,json,css",
+    "exec": "pnpm dev",
+    "signal": "SIGTERM"
+}

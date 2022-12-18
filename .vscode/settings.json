@@ -2,5 +2,11 @@
     "prettier.documentSelectors": ["**/*.svelte"],
     "files.associations": {
         "*.css": "tailwindcss"
-    }
+    },
+    "json.schemas": [
+        {
+            "fileMatch": ["/public/manifest.json"],
+            "url": "http://json.schemastore.org/chrome-manifest"
+        }
+    ]
 }

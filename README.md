@@ -1,26 +1,70 @@
-# Svelte + TS + Vite
+# WebExtension Svelte & TailwindCSS
 
-## Included libraries
+A template for developing WebExtensions with Svelte & TailwindCSS
 
--   Svelte
--   TypeScript
--   TailwindCSS
-    -   MD3 Color Tokens
+# Features
+
+-   [Svelte](https://svelte.dev/)
+-   [TypeScript](https://www.typescriptlang.org/)
+-   [TailwindCSS](https://tailwindcss.com/)
+    -   [MD3 Color Tokens](https://m3.material.io/styles/color/the-color-system/tokens)
     -   Dark Mode support
--   Material Icons
+-   [Material Icons](https://fonts.google.com/icons?icon.set=Material+Icons)
+-   [WebExtension polyfill](https://github.com/mozilla/webextension-polyfill)
 
-### Things to change
+## Dev Tools
+
+-   [pnpm](https://pnpm.io/)
+-   [npm-run-all](https://github.com/mysticatea/npm-run-all)
+
+# Usage
+
+## Directories
+
+-   `src/` - main source
+
+    -   `assets/` - assets for Svelte components
+    -   `components/` - Svelte components that can be used on all pages
+    -   `pages/` - directory for all extension _pages_
+        -   `background/` - background scripts (additional scripts need to be added to `vite.config.ts` and `manifest.json`)
+        -   `content/` - scripts and components to be used for content_script
+        -   `options/` - options page files
+        -   `popup/` - popup page files
+    -   `theme/` - theme files
+
+-   `public/` - static extension files
+
+    -   `icon/` - extension icon files
+    -   `manifest.json` - manifest file
+
+-   `dist/` - built files, use this directory for loading the extension
+
+## Development
+
+```
+pnpm dev
+```
+
+Then load the extension in browser from the dist/ directory.
+There is a [nodemon](https://www.npmjs.com/package/nodemon) config file for automatic building.
+
+## Build
+
+```
+pnpm prod
+```
+
+Then pack/zip files in the `dist` directory.
+
+## Things to change
 
 -   Change page title in `index.html`
 -   Add a Favicon
 -   Setup colors in `src/theme/tokens.css`
 
-### Todo
+# Todo
 
--   Dark mode toggle
 -   Linter/ESLint
-
-### Notes
-
--   Override type of material-icons.css & material-icons.min.css (Webstorm)
--   ~~PostCSS error -> delete yarn.lock~~ Probably fixed
+-   Find an elegant way to do HMR
+-   Find a way to have only one vite config
+-   Many other optimizations

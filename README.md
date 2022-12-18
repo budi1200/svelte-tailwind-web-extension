@@ -58,8 +58,10 @@ Then pack/zip files in the `dist` directory.
 
 ## Things to change
 
--   Change page title in `index.html`
--   Add a Favicon
+-   Change page titles in `popup.html` & `options.html`
+-   Change extension name and description in `manifest.json`
+-   Change package name in `package.json`
+-   Change extension icon in `public/icon`
 -   Setup colors in `src/theme/tokens.css`
 
 # Todo
@@ -67,4 +69,5 @@ Then pack/zip files in the `dist` directory.
 -   Linter/ESLint
 -   Find an elegant way to do HMR
 -   Find a way to have only one vite config
+-   Build manifest with typescript
 -   Many other optimizations

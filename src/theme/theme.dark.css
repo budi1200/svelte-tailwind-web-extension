@@ -1,0 +1,20 @@
+:root {
+    --color-primary: var(--md-sys-color-primary-dark);
+    --color-on-primary: var(--md-sys-color-on-primary-dark);
+    --color-primary-container: var(--md-sys-color-primary-container-dark);
+    --color-on-primary-container: var(--md-sys-color-on-primary-container-dark);
+    --color-secondary: var(--md-sys-color-secondary-dark);
+    --color-on-secondary: var(--md-sys-color-on-secondary-dark);
+    --color-secondary-container: var(--md-sys-color-secondary-container-dark);
+    --color-on-secondary-container: var(--md-sys-color-on-secondary-container-dark);
+    --color-error: var(--md-sys-color-error-dark);
+    --color-error-container: var(--md-sys-color-error-container-dark);
+    --color-on-error: var(--md-sys-color-on-error-dark);
+    --color-on-error-container: var(--md-sys-color-on-error-container-dark);
+    --color-background: var(--md-sys-color-background-dark);
+    --color-on-background: var(--md-sys-color-on-background-dark);
+    --color-surface: var(--md-sys-color-surface-dark);
+    --color-on-surface: var(--md-sys-color-on-surface-dark);
+    --color-outline: var(--md-sys-color-outline-dark);
+    --color-outline-variant: var(--md-sys-color-outline-variant-dark);
+}

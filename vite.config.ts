@@ -1,9 +1,16 @@
 import { defineConfig, UserConfig } from "vite";
 import { svelte } from "@sveltejs/vite-plugin-svelte";
 import tsconfigPaths from "vite-tsconfig-paths";
+import Icons from "unplugin-icons/vite";
 
 export const sharedConfig: UserConfig = {
-    plugins: [tsconfigPaths(), svelte()],
+    plugins: [
+        tsconfigPaths(),
+        svelte(),
+        Icons({
+            compiler: "svelte",
+        }),
+    ],
 };
 
 export default defineConfig({

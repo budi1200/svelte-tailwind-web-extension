@@ -1,5 +1,4 @@
 import Options from "./Options.svelte";
-import "@material-design-icons/font/outlined.css";
 import "../../tailwind.css";
 import "../../theme/theme.css";
 

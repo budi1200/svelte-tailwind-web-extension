@@ -1,5 +1,4 @@
 import Content from "./Content.svelte";
-import "@material-design-icons/font/outlined.css";
 import "../../tailwind.css";
 import "../../theme/theme.css";
 

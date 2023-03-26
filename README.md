@@ -9,7 +9,7 @@ A template for developing WebExtensions with Svelte & TailwindCSS
 -   [TailwindCSS](https://tailwindcss.com/)
     -   [MD3 Color Tokens](https://m3.material.io/styles/color/the-color-system/tokens)
     -   Dark Mode support
--   [Material Icons](https://fonts.google.com/icons?icon.set=Material+Icons)
+-   [Unplugin Icons (Iconify)](https://github.com/antfu/unplugin-icons)
 -   [WebExtension polyfill](https://github.com/mozilla/webextension-polyfill)
 
 ## Dev Tools
@@ -63,6 +63,11 @@ Then pack/zip files in the `dist` directory.
 -   Change package name in `package.json`
 -   Change extension icon in `public/icon`
 -   Setup colors in `src/theme/tokens.css`
+
+### Icons
+
+-   Preinstalled icon pack is Material Design Icons (`@iconify-json/mdi`)
+-   Learn how to install other icon packs [here](https://github.com/antfu/unplugin-icons#icons-data)
 
 # Todo
 
